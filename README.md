@@ -1,16 +1,14 @@
 # AI Psychologist Chatbot
 
 ## Table of Contents
-- [Project Overview](#project-overview)
-- [Features](#features)
-- [Architecture & Tech Stack](#architecture--tech-stack)
-- [Installation](#installation)
-- [Running the Application](#running-the-application)
-- [Usage](#usage)
-- [Screenshots](#screenshots)
-- [Contributing](#contributing)
-- [License](#license)
-
+- Project Overview
+- Features
+- Architecture & Tech Stack
+- Installation
+- Running the Application
+- Usage
+- Screenshots
+- Api Endpoints
 ---
 
 ## Project Overview
@@ -60,21 +58,38 @@ Key functionalities:
    ```
 
 2. **Frontend Setup**
-  ```bash
-     cd ../frontend
-  npm install
-  ```
-3.***backend setup***
-  ```bash
-  cd backend
-  source venv/bin/activate
-  flask run
-  ```
+    ```bash
+       cd ../frontend
+    npm install
+    ```
+3. **Backend setup**
+    ```bash
+    cd backend
+    source venv/bin/activate
+    flask run
+    ```
+4. **MongoDB**
 
-4. MongoDB
+   Ensure MongoDB is running locally or configure MONGO_URI in backend/.env
 
-Ensure MongoDB is running locally or configure MONGO_URI in backend/.env
+## Running the Application 
+# 🧠 Run Rasa Core (API + Debug mode)
+```bash
+rasa run --enable-api --cors "*" --debug
+```
+# 🧰 Run Rasa Action Server
+```bash
+rasa run actions
+```
 
+# 🔙 Run Flask Backend
+```bash
+python backend_analysis.py
+```
+# 🌐 Run React Frontend
+```bash
+npm start
+```
 
 ## Usage
 
@@ -93,6 +108,28 @@ Ensure MongoDB is running locally or configure MONGO_URI in backend/.env
    - View interactive charts and session summary.
 
 ---
+
+## 🔌 API Endpoints
+
+### 🧠 Chatbot (Rasa)
+- `POST http://localhost:5005/webhooks/rest/webhook`  
+  → Send user messages to the chatbot and receive responses.
+
+### 📋 Patient & Session Data (Flask)
+- `GET http://localhost:5000/get-patients-sessions`  
+  → Fetch all patients and their session IDs.
+
+- `POST http://localhost:5000/get-report`  
+  → Get full emotional/sentiment report for a selected patient and session.
+
+### 🖼️ Static Files (Charts, Wordclouds)
+- `GET http://localhost:5000/static/<filename>`  
+  → Get static files like PNGs (emotion chart, word cloud, etc.)
+
+### 🌐 Interactive Visualizations
+- `GET http://localhost:5000/interactive/<filename>`  
+  → Load interactive HTML visualizations (e.g., sentiment trend from Plotly)
+
 
 ## Screenshots
 
