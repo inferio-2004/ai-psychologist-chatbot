@@ -1,0 +1,131 @@
+/* Main chat container */
+.chat-container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    background: #121212;
+    color: white;
+    padding-bottom: 20px;
+    position: relative;
+  }
+  
+  /* Chat message box */
+  .chat-box {
+    width: 90%;
+    max-width: 600px;
+    height: 60vh;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    backdrop-filter: blur(5px);
+    box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.2);
+  }
+  
+  /* User and bot messages */
+  .user-message, .bot-message {
+    max-width: 80%;
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 10px;
+    font-size: 14px;
+  }
+  
+  .user-message {
+    align-self: flex-end;
+    background: #1e88e5;
+    color: white;
+  }
+  
+  .bot-message {
+    align-self: flex-start;
+    background: #444;
+    color: white;
+  }
+  
+  /* Input area */
+  .input-area {
+    display: flex;
+    width: 90%;
+    max-width: 600px;
+    margin-top: 10px;
+  }
+  
+  .input-area input {
+    flex: 1;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    outline: none;
+    background: rgba(255, 255, 255, 0.1);
+    color: white;
+  }
+  
+  .send-button, .mic-button {
+    padding: 10px 15px;
+    margin-left: 5px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: 0.3s;
+  }
+  
+  .send-button {
+    background: #1e88e5;
+    color: white;
+  }
+  
+  .mic-button {
+    background: #ff1744;
+    color: white;
+  }
+  
+  .send-button:hover {
+    background: #1565c0;
+  }
+  
+  .mic-button:hover {
+    background: #d50000;
+  }
+  
+  /* Microphone glowing effect */
+  .mic-active-glow {
+    animation: glow 1s infinite alternate;
+  }
+  
+  @keyframes glow {
+    from { box-shadow: 0 0 10px rgba(255, 23, 68, 0.6); }
+    to { box-shadow: 0 0 20px rgba(255, 23, 68, 1); }
+  }
+  
+  /* ORB animation & placement */
+  .globe-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 0;
+    opacity: 0.5;
+  }
+  
+  .globe {
+    width: 150px;
+    height: 150px;
+    background: radial-gradient(circle, rgba(0, 204, 255, 0.8), rgba(0, 0, 0, 0));
+    border-radius: 50%;
+    box-shadow: 0 0 20px rgba(0, 204, 255, 0.8);
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .globe-active {
+    transform: scale(1.1);
+    box-shadow: 0 0 30px rgba(0, 204, 255, 1);
+  }
+  

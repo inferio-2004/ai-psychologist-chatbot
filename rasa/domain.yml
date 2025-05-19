@@ -1,0 +1,87 @@
+version: "3.1"
+
+intents:
+  - provide_patient_id  # NEW intent to capture patient ID
+  - greetings
+  - goodbye
+  - self-esteem-A
+  - self-esteem-B
+  - relationship-b
+  - relationship-a
+  - angermanagement-a
+  - angermanagement-b
+  - domesticviolence
+  - griefandloss
+  - substanceabuse-a
+  - substanceabuse-b
+  - family-conflict
+
+slots:
+  patient_id:  # NEW slot to store Patient ID
+    type: text
+    influence_conversation: false
+    initial_value: null
+    mappings:
+      - type: custom  # Rasa 3.x+ requires an explicit mapping
+
+
+responses:
+  utter_ask_patient_id:
+    - text: "Before we begin, please provide your patient ID."
+  utter_confirm_patient_id:
+    - text: "Thank you. Your patient ID is {patient_id}. How can I assist you today?"
+
+  utter_angermanagement-a:
+    - text: "Sometimes we react to situations immediately, without thinking of the consequences..."
+
+  utter_angermanagement-b:
+    - text: "A lot of times the anger someone expresses is from feeling a deep level hurt within themselves..."
+
+  utter_domesticviolence:
+    - text: "I'm glad that you are reaching out for help. What you are going through sounds overwhelming..."
+
+  utter_family-conflict:
+    - text: "Breaking the patterns of relating to family members is difficult work..."
+
+  utter_goodbye:
+    - text: "Talk to you later!"
+    - text: "Bye!"
+    - text: "Goodbye!"
+
+  utter_greetings:
+    - text: "Hello! How are you today!"
+    - text: "Hey! What's up"
+    - text: "Hey, How are you feeling today"
+
+  utter_griefandloss:
+    - text: "To see someone you've loved pass away must be very painful. If you need to mourn, take some time to do so."
+
+  utter_relationship-a:
+    - text: "Often, communication is the key within relationships..."
+
+  utter_relationship-b:
+    - text: "Although we can have moments when we feel alone, feeling alone most of the time could indicate a lack of connection..."
+
+  utter_self-esteem-A:
+    - text: "A lot of times, these feelings are the result of people in your life treating you a certain way..."
+
+  utter_self-esteem-B:
+    - text: "Have you spoken to your healthcare provider about your situation?"
+
+  utter_substanceabuse-a:
+    - text: "Studies have proven that addiction affects the brain..."
+
+  utter_substanceabuse-b:
+    - text: "Your friend needs to admit they have a problem. It can be more dangerous to take medication away suddenly."
+
+  utter_mood_great:
+    - text: "That's awesome! Keep up the positive vibes! 😊"
+    - text: "Glad to hear that! Stay happy and motivated! 🚀"
+
+actions:
+  - action_store_patient_id  # NEW: Stores patient ID
+  - action_log_conversation  # NEW: Logs conversation in MongoDB
+
+session_config:
+  carry_over_slots_to_new_session: true
+  session_expiration_time: 60

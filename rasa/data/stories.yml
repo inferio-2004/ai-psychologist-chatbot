@@ -1,0 +1,92 @@
+version: "3.1"
+
+stories:
+- story: User provides patient ID
+  steps:
+  - intent: provide_patient_id
+  - action: action_store_patient_id
+  - action: utter_confirm_patient_id
+
+- story: User greets the bot
+  steps:
+  - intent: greetings
+  - action: utter_greetings
+  - checkpoint: asked_patient_id
+
+- story: User says goodbye
+  steps:
+  - intent: goodbye
+  - action: utter_goodbye
+  - action: action_log_conversation  # Logs conversation before ending
+
+- story: User asks about self-esteem
+  steps:
+  - intent: self-esteem-A
+  - action: utter_self-esteem-A
+  - action: action_log_conversation  # Log each conversation topic
+
+- story: User discusses relationship issues
+  steps:
+  - intent: relationship-a
+  - action: utter_relationship-a
+  - action: action_log_conversation
+
+- story: User seeks anger management advice
+  steps:
+  - intent: angermanagement-a
+  - action: utter_angermanagement-a
+  - action: action_log_conversation
+
+- story: User reports domestic violence
+  steps:
+  - intent: domesticviolence
+  - action: utter_domesticviolence
+  - action: action_log_conversation
+
+- story: User is struggling with grief and loss
+  steps:
+  - intent: griefandloss
+  - action: utter_griefandloss
+  - action: action_log_conversation
+
+- story: User talks about substance abuse
+  steps:
+  - intent: substanceabuse-a
+  - action: utter_substanceabuse-a
+  - action: action_log_conversation
+
+- story: User discusses relationship problems (B)
+  steps:
+  - intent: relationship-b
+  - action: utter_relationship-b
+  - action: action_log_conversation
+
+- story: User has family conflicts
+  steps:
+  - intent: family-conflict
+  - action: utter_family-conflict
+  - action: action_log_conversation
+
+- story: User has self-esteem issues (B)
+  steps:
+  - intent: self-esteem-B
+  - action: utter_self-esteem-B
+  - action: action_log_conversation
+
+- story: User talks about substance abuse (B)
+  steps:
+  - intent: substanceabuse-b
+  - action: utter_substanceabuse-b
+  - action: action_log_conversation
+
+- story: User needs anger management (B)
+  steps:
+  - intent: angermanagement-b
+  - action: utter_angermanagement-b
+  - action: action_log_conversation
+
+- story: Respond to a happy mood
+  steps:
+  - intent: mood_great
+  - action: utter_mood_great
+  - action: action_log_conversation

@@ -1,0 +1,337 @@
+nlu:
+- examples: '- hello
+    - hey
+    - hi
+    - good day
+    - hello there
+    - greetings
+    - hi there
+    - good morning
+    - good evening
+    - hey buddy
+    - howdy
+    - hi, how are you?
+    - what''s up?
+    - hey there! how''s your day?
+    - yo!
+    - how is it going'
+  intent: greetings
+- examples: '- cya
+
+    - see you later
+
+    - goodbye
+
+    - Have a good day
+
+    - bye
+
+    - I am leaving'
+  intent: goodbye
+- examples: '- How do I cope with ''never being good enough?''
+
+    - I''m always told I''m not good enough or trying hard enough.
+
+    - I put my all in to every thing.
+
+    - I''m worn out, I''ve worked on all of my family relationships, I''m doing great
+    in school, I''m kind to those in need and otherwise. I stick to my religious beliefs
+    and leave room for mistakes and learn from others so I don''t have to make as
+    many and the ones I do I learn from.
+
+    - Somehow it''s still not good enough and nothing I do works. Nothing has changed,
+    and I feel hopeless. Any suggestions or ideas?
+
+    - I feel like I failed myself
+
+    - I Sometimes I feel like I hate myself
+
+    - I feel like I hate myself physically and emotionally sometimes.
+
+    - How can I start accepting myself and be more confident?
+
+    - Why am I starting to not like myself?
+
+    - For the past year, I have been feeling pressured to do well in school, and it
+    put a ton of stress on me
+
+    - I have been bullied for five years for taking stress, it is now sinking in,
+    and I can''t stop it. For some other reason, I can''t find a hobby I can see myself
+    doing without thinking bad about myself
+
+    - Why do I feel like I can never meet people''s expectations?
+
+    - Why am I so nervous talking to people?
+
+    - I feel like I failed myself'
+  intent: self-esteem-A
+- examples: '- How can I feel less self-conscious about my weight?
+
+    - I''m a teenage girl, and I feel very bad about my weight. I don''t know how
+    to make it stop.
+
+    - I am very self conscious about my body
+
+    - On the first day of school I wore a bra that was too big so that it would look
+    like I had bigger boobs. I did that the whole school year and my parents never
+    found out. But now I can never hang out with my friends at my house or invite
+    them over because it would be around my parents and my friends would see there
+    is nothing there on my chest.
+
+    - I hate the way I look
+
+    - I hate everything I see in the mirror. I don''t like being in pictures and always
+    scribble out my face. It''s stressing me out. I don''t trust my parents enough
+    to tell them and I don''t know what to do.
+
+    - How come I feel ugly?
+
+    - I''m in my early 20s. I''ve been married once, and he cheated on me. Ever since
+    then, I''ve felt ugly no matter what. I''m engaged, and I still feel ugly. I don''t
+    like to take pictures of myself.'
+  intent: self-esteem-B
+- examples: '- Why do I feel like I always need to be in a relationship?
+
+    - I have suffered many things at home and school. We never went to the doctor
+    to diagnose depression or anything like that, but I always feel like a part of
+    my heart is missing. I try to fill it in with objects or, in this case, a woman.
+
+    - How come no man sparks my interest?
+
+    - I was never single, afraid to be alone, and I looked for my boyfriend to make
+    me happy. I finally worked on my self, was in a relationship, and I did everything
+    a healthy girlfriend does and it didn''t work out. Now months later, no man peaks
+    my interest. Am I ready to date again? Is there a reason no one sparks my interest?
+
+    - Why is it hard for me to express myself?
+
+    - I don''t know how to tell someone how I feel about them. How can I get better
+    at expressing how I feel?
+
+    - I feel like I can''t control having inappropriate thoughts
+
+    - I find that I imagine things sexually, and I hate it because it puts strain
+    on my relationship. I feel helpless and guilty. I want it to go away, and I want
+    to make my woman happy again.
+
+    - I feel like I could never be with anyone because no one would want me
+
+    - What do I do if I have been feeling like I could never be with anyone because
+    no one would want me. Or I couldn''t have many friends because of who I am. It''s
+    strange I want to be loved but I''d hate to be because I always lose.'
+  intent: relationship-b
+- examples: '- Why does my boyfriend threaten to leave every night?
+
+    - My boyfriend is always saying he''s done with me and says he''s leaving, but
+    then at the end of the night, he''s still here. He wakes up in the morning, acts
+    like nothing happen, and repeats this every night.
+
+    - I''m scared of losing my girlfriend
+
+    - My girlfriend recently started hanging out a lot more with one of her friends
+    who did her wrong in the past and just walked out on her. So for the past 3 years
+    its been just me and my girlfriend. Things have been great up until the last month.
+    Now she ignores me and texts and hangs oit with her friend more and more. I dont
+    know what to do anymore. My girlfriend is so distant. How do I keep from losing
+    her?
+
+    - Why do I keep getting with men that emotionally abuse me?
+
+    - I''m having a lot of conflict in my relationship
+
+    - We do communicate but one of us has trouble accepting what the other person
+    says. How can I fix things?'
+  intent: relationship-a
+- examples: '- How can I control myself and my anger?
+
+    - I snap easy and push people away. I need help before I push my boyfriend away.
+
+    - How can I control my temper?
+
+    - I get angry and act out. It scares my wife and child.
+
+    - How can I just be happy and not mad all the time?
+
+    - I get really mad easily at my parents and family.
+
+    - My long-term girlfriend broke up with me recently. She says it''s because of
+    my anger.
+
+    - I been having anger problems a lot lately. It only takes one word wrongly said
+    to set me off. I use to not be like this until I got with my soon-to-be husband.
+    I think his mood and rage/anger problems have rubbed off on me a lot. I don''t
+    get nearly as bad as he does, but I yell almost constantly and I can''t seem to
+    just stop. I have two young babies that have to hear this, and I don''t want my
+    girls growing up with a mommy like I have been lately. I just don''t know how
+    to get back to my old self.
+
+    - i need answers to my angry, possessiveness, and urges
+
+    - Whenever I run into a situation that makes me upset or angry, I tend to start
+    cursing and badly offending the person I am confronting. I say mean things to
+    let my anger out. Whenever people tell me stuff about my relationship (like starting
+    rumors or saying negative things about me or my relationship) I lash out not just
+    them but at my boyfriend. I feel like I keep causing drama due to my personality.
+    I want to be a better person and learn to let things not get to me and be happy
+    and graceful. I hurt the ones I love with my words. I want to be better for myself
+    and them.
+
+    - Sometime when small thing happen, like losing a comb, I get furious. I even
+    start throwing things. Do I have a problem?'
+  intent: angermanagement-a
+- examples: "- We're in an eight year relationship. My boyfriend drinks a lot. He\
+    \ experienced childhood trauma. I don't know how to deal with violent outbursts.\n\
+    - My husband and I cant talk to each other without arguing\n- Every time I speak,\
+    \ he says I anger him. Also, when heâ€™s mad at something, like work, he gets\
+    \ angry at me. I feel like weâ€™re so distant from each other now. We used to\
+    \ laugh all the time, and I feel like he lets too much negativity in. What should\
+    \ I do? We've been married for two years but together for seven.\n- How can I\
+    \ help my boyfriend's anger issues?\n- I have an emotionally abusive relationship.\
+    \ We have been together for a year and a half. He got out of prison exactly a\
+    \ year ago and a half ago, and we have a infant. I love my boyfriend, and I don't\
+    \ want to leave without fighting for this first. He's an emotionally disconnected\
+    \ person. We never say â€œI love youâ€\x9D to each other. Every fight is worse\
+    \ than the last one, and I don't know what to do. He doesn't let me speak because\
+    \ he's louder than me, and that makes me feel frustrated. I have another problem:\
+    \ English is my second language. I pay half of the bills, and every time I want\
+    \ to speak to him, he kicks me out of the house. He apologizes sometimes. I feel\
+    \ like I'm the only one fighting for this. He agreed to have counseling.\n- Why\
+    \ did my boyfriend hit himself in the face during an argument?\n- When I got home,\
+    \ my boyfriend and I got into an argument. He got upset and he started hitting\
+    \ his face. That is the first time he has ever done that, but I would be lying\
+    \ if I said that didn't scare me. I locked myself in the room."
+  intent: angermanagement-b
+- examples: '- How do I get my partner to stop verbally abusing me?
+
+    - Every time my partner gets angry for anything, she takes it out on me. Nothing
+    I do is right, and once she''s mad, she calls me all kinds of names and is verbally
+    abusive. She says it isnâ€™t abuse, itâ€™s just angry verbal bashing, and that
+    itâ€™s different. It gets worse each time. The names are very vulgar now.
+
+    - He is verbally abusive. When he gets mad, he just yells at me. At times, I feel
+    scared.
+
+    - How do I overcome the nightmare from the domestic violence of a past relationship?
+
+    - I am a survivor of domestic violence from a past relationship. Even after seven
+    years, I still have horrible nightmares. I wake up in sweat, and the dreams feel
+    so real.
+
+    - How do I get out of an abusive relationship?
+
+    - I''ve been with my boyfriend over 3 years. He cheated on me and the woman is
+    now pregnant. He is physically and mentally abusive towards me. I have attempted
+    to talk with him in order to resolve our issues; however, he never wants to talk
+    and often blames me for everything. Iâ€™m always there when he needs my help.
+    He tells me although I help him doesnâ€™t mean that I am a good person. He always
+    discredits me as a woman and itâ€™s hurtful. I spend most day crying and feeling
+    lonely. I am unhappy and unsure of what I need to do.
+
+    - I endured sexual and physical abuse by my brother as child'
+  intent: domesticviolence
+- examples: '- I just lost my grandpa
+
+    - I loved him more than anything. He passed away on our anniversary which was
+    also the day I was going to apply for our apartment. I''m not handling it well.
+    I moved to a new town and started a new life but nothing helps.
+
+    - My grandma and brother both passed away 11 years ago and sometimes at night
+    I just can''t stop crying while thinking about the good memories we had but won''t
+    have ever again. I can''t sleep at night when the memories and tears come I''ll
+    be fine all day then at night...boom! it''s like waterfalls from my eyes. Why
+    can''t I stop crying?
+
+    - I lost my mom, and I feel like I''m depressed
+
+    - I feel guilty about my fathers death
+
+    - How do I find happiness after my boyfriend passed away?'
+  intent: griefandloss
+- examples: '- I over endulge when I drink alcohol and feel extremely guilty about
+    it the next day
+
+    - I''m a female in my mid 20s. Lately I tend to over drink and I''ve become a
+    very angry drunk. In the past, I have even cheated on my boyfriend while I was
+    under the influence of alcohol.    But now, even if I don''t do anything wrong
+    and don''t embarrass myself, I still feel really guilty after a night of drinking.
+    I don''t understand why I''m feeling this way. Does this mean I have a problem?
+
+    - I''m addicted to smoking. How can I stop?
+
+    - I''m planning to have baby, so I have to quit smoking - but it''s hard. Sometimes
+    it''s not a physical need, it''s mental.I cannot help myself from thinking about
+    smoking. What can I do to get rid of this addiction?
+
+    - How can I stop abusing alcohol?
+
+    - I have bipolar II disorder, I''m addicted to alcohol and weed, and I''m hopeless.
+    I keep drinking even though it''s harming myself and others.'
+  intent: substanceabuse-a
+- examples: '- I don''t know if my ex-boyfriend is using opiates again
+
+    - My boyfriend and I recently broke up. One week, we were fine, and the next,
+    he told me he needed space. He completely deleted me out of his life. He does
+    have an opiate addiction. He claimed he was sober, but since we''ve split, I''ve
+    heard many lies from him. Could he be using again, and does this addiction affect
+    the mind?
+
+    - My friend is abusing her prescription medicine. Even though she told me she
+    didn''t have any more pills, I found she has prescriptions for anxiety medications.
+
+    - My brother has been a heroin addict for years, and heâ€™s now in his mid-30s.
+    He has taken from me my mom and my grandparents. He''s sick in the head. Now he
+    moved his girlfriend into the house because they both manipulated us. Today, my
+    mom and my brother went toe-to-toe over his girlfriend not helping around the
+    house and always being high. I ended up hitting my brother for getting so close
+    to my mom''s face. I feel terrible, but he''s always picking his girlfriend over
+    us. Mind you, he tells other girls that he hates his girlfriend, he''s single,
+    and she''s only living here because he feels bad. We tried kicking them out and
+    everything, but nothing is working. They do nothing to try and help.'
+  intent: substanceabuse-b
+- examples: '- No matter what I do, my mom will almost always find something wrong
+    with it
+
+    - I have a mother who is still running my life even though I''m almost 30 years
+    old. I want to move out and live my own life, but it feels like as long as I do
+    what my mom wants our relationship is okay. It''s never okay if I don''t do what
+    she wants.    I don''t know how to start making my own decisions and not worry
+    about whether it''s right in her eyes. Would it help for me to talk to someone
+    about this?
+
+    - How can I avoid family members who stress me out?
+
+    - What can I do about my family not accepting me as bisexual?
+
+    - Why can''t my mom ever be proud of me?
+
+    - My parents are threatening to send me away if I don''t play basketball for a
+    team I hate
+
+    - I am always arguing with my father. He gets stressed over work and health and
+    talks to me in a tone of voice that seems very demanding and seems more like yelling.
+    I get upset often at this. Am I too sensitive? He always says I am overreacting
+    but never seems to understand that he is hurting my feelings. No matter how often
+    I try to tell him this, he never listens.
+
+    - Some adult family members are acting erratically in my house
+
+    - My parents are threatening to get rid of the only things I still care about
+
+    - Keeping secrets from my family'
+  intent: family-conflict
+- examples: '- perfect
+    - great
+    - amazing
+    - feeling awesome
+    - I''m alright man
+    - I''m happy
+    - I am good
+    - doing great!
+    - feeling fantastic
+    - I feel amazing
+    - all good here
+    - I''m in a good mood
+    - couldn''t be better
+    - wonderful
+    - so good'
+  intent: mood_great

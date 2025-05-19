@@ -1,0 +1,62 @@
+{
+  "type": "MaxHistoryTrackerFeaturizer",
+  "state_featurizer": {
+    "action_texts": [],
+    "entity_tag_specs": [],
+    "feature_states": {
+      "intent": {
+        "angermanagement-a": 0,
+        "angermanagement-b": 1,
+        "back": 2,
+        "domesticviolence": 3,
+        "family-conflict": 4,
+        "goodbye": 5,
+        "greetings": 6,
+        "griefandloss": 7,
+        "nlu_fallback": 8,
+        "out_of_scope": 9,
+        "relationship-a": 10,
+        "relationship-b": 11,
+        "restart": 12,
+        "self-esteem-A": 13,
+        "self-esteem-B": 14,
+        "session_start": 15,
+        "substanceabuse-a": 16,
+        "substanceabuse-b": 17
+      },
+      "action_name": {
+        "action_listen": 0,
+        "action_restart": 1,
+        "action_session_start": 2,
+        "action_default_fallback": 3,
+        "action_deactivate_loop": 4,
+        "action_revert_fallback_events": 5,
+        "action_default_ask_affirmation": 6,
+        "action_default_ask_rephrase": 7,
+        "action_two_stage_fallback": 8,
+        "action_unlikely_intent": 9,
+        "action_back": 10,
+        "...": 11,
+        "action_extract_slots": 12,
+        "utter_angermanagement-a": 13,
+        "utter_angermanagement-b": 14,
+        "utter_domesticviolence": 15,
+        "utter_family-conflict": 16,
+        "utter_goodbye": 17,
+        "utter_greetings": 18,
+        "utter_griefandloss": 19,
+        "utter_relationship-a": 20,
+        "utter_relationship-b": 21,
+        "utter_self-esteem-A": 22,
+        "utter_self-esteem-B": 23,
+        "utter_substanceabuse-a": 24,
+        "utter_substanceabuse-b": 25
+      },
+      "entities": {},
+      "slots": {},
+      "active_loop": {}
+    }
+  },
+  "remove_duplicates": true,
+  "max_history": 10
+}

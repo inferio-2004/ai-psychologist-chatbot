@@ -1,0 +1,68 @@
+version: "3.1"
+
+rules:
+- rule: Respond to greetings
+  steps:
+  - intent: greetings
+  - action: utter_greetings
+  - action: action_log_conversation
+
+- rule: Log conversation at the end
+  steps:
+  - intent: goodbye
+  - action: action_log_conversation
+  - action: utter_goodbye
+
+- rule: Provide self-esteem advice
+  steps:
+  - intent: self-esteem-A
+  - action: utter_self-esteem-A
+  - action: action_log_conversation
+
+- rule: Offer relationship guidance
+  steps:
+  - intent: relationship-a
+  - action: utter_relationship-a
+  - action: action_log_conversation
+
+- rule: Provide anger management support
+  steps:
+  - intent: angermanagement-a
+  - action: utter_angermanagement-a
+  - action: action_log_conversation
+
+- rule: Provide advice on relationship issues (B)
+  steps:
+  - intent: relationship-b
+  - action: utter_relationship-b
+  - action: action_log_conversation
+
+- rule: Handle family conflict issues
+  steps:
+  - intent: family-conflict
+  - action: utter_family-conflict
+  - action: action_log_conversation
+
+- rule: Respond to self-esteem concerns (B)
+  steps:
+  - intent: self-esteem-B
+  - action: utter_self-esteem-B
+  - action: action_log_conversation
+
+- rule: Offer support for substance abuse (B)
+  steps:
+  - intent: substanceabuse-b
+  - action: utter_substanceabuse-b
+  - action: action_log_conversation
+
+- rule: Help with anger management (B)
+  steps:
+  - intent: angermanagement-b
+  - action: utter_angermanagement-b
+  - action: action_log_conversation
+
+- rule: Respond to a happy mood
+  steps:
+  - intent: mood_great
+  - action: utter_mood_great
+  - action: action_log_conversation

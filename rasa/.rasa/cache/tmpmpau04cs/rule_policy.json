@@ -1,0 +1,34 @@
+{
+  "lookup": {
+    "rules": {
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"greetings\"}}]": "utter_greetings",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"greetings\"}}, {\"prev_action\": {\"action_name\": \"utter_greetings\"}, \"user\": {\"intent\": \"greetings\"}}]": "action_listen",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"family-conflict\"}}]": "utter_family-conflict",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"family-conflict\"}}, {\"prev_action\": {\"action_name\": \"utter_family-conflict\"}, \"user\": {\"intent\": \"family-conflict\"}}]": "action_listen",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"self-esteem-B\"}}]": "utter_self-esteem-B",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"self-esteem-B\"}}, {\"prev_action\": {\"action_name\": \"utter_self-esteem-B\"}, \"user\": {\"intent\": \"self-esteem-B\"}}]": "action_listen",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"angermanagement-a\"}}]": "utter_angermanagement-a",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"angermanagement-a\"}}, {\"prev_action\": {\"action_name\": \"utter_angermanagement-a\"}, \"user\": {\"intent\": \"angermanagement-a\"}}]": "action_listen",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"relationship-b\"}}]": "utter_relationship-b",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"relationship-b\"}}, {\"prev_action\": {\"action_name\": \"utter_relationship-b\"}, \"user\": {\"intent\": \"relationship-b\"}}]": "action_listen",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"goodbye\"}}]": "utter_goodbye",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"goodbye\"}}, {\"prev_action\": {\"action_name\": \"utter_goodbye\"}, \"user\": {\"intent\": \"goodbye\"}}]": "action_listen",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"relationship-a\"}}]": "utter_relationship-a",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"relationship-a\"}}, {\"prev_action\": {\"action_name\": \"utter_relationship-a\"}, \"user\": {\"intent\": \"relationship-a\"}}]": "action_listen",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"substanceabuse-b\"}}]": "utter_substanceabuse-b",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"substanceabuse-b\"}}, {\"prev_action\": {\"action_name\": \"utter_substanceabuse-b\"}, \"user\": {\"intent\": \"substanceabuse-b\"}}]": "action_listen",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"self-esteem-A\"}}]": "utter_self-esteem-A",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"self-esteem-A\"}}, {\"prev_action\": {\"action_name\": \"utter_self-esteem-A\"}, \"user\": {\"intent\": \"self-esteem-A\"}}]": "action_listen",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"angermanagement-b\"}}]": "utter_angermanagement-b",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"angermanagement-b\"}}, {\"prev_action\": {\"action_name\": \"utter_angermanagement-b\"}, \"user\": {\"intent\": \"angermanagement-b\"}}]": "action_listen"
+    },
+    "rule_only_slots": [],
+    "rule_only_loops": [],
+    "rules_for_loop_unhappy_path": {},
+    "rules_not_in_stories": [
+      "predicting default action with intent session_start",
+      "predicting default action with intent restart",
+      "predicting default action with intent back"
+    ]
+  }
+}
